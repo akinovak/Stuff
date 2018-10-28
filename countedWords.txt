@@ -1,0 +1,12 @@
+day : 0
+is : 0
+sunny : 0
+the : 0
+day : 0
+is : 0
+sunny : 0
+the : 0
+day : 00
+is : 0000
+sunny : 000
+the : 00000

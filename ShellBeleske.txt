@@ -1,0 +1,28 @@
+SHELL PODSETNIK :
+
+1. egrep -> komanda koja hvata regularni izraz i uz pomoc opcija -o -h ga ispisuje na stdout
+
+2. sed -r 's/regex1/regex2/g' -> komanda koja ono sto smo dobili iz egrepa filtrira tako da regex1 menja regexom2, global znaci da svuda u redu
+
+3. ako u .sh fajlu navedemo samo komandu koju zelimo ona se izvrsava
+	
+	3.1. -> cuvanje vrednosti komande mozemo obezbediti sa promenljiva="$(komanda)"
+	3.2. -> echo $promenljiva ispisuje rezultat komande na standardni izlaz
+
+4. > -> za preusmerenje u drugi fajl gde on brise sve pa pise preko njega
+
+5. >> -> za nadovezivanje u drugi fajl
+
+6. sort -ki -r -> sortira (ki znaci da sortira po i-toj koloni), -r znaci da sortira po obrnutom redosledu
+
+7. egrep '.*' -n -> sve sto smo dobili numerise
+
+8. egrep -c 'regex' -> umesto ispisivanja svih pronadjenih ispisuje samo broj pronadjenih
+
+9. ako u okviru regexa u egrepu imamo tipa </td> tu ne mora escape, ali ako radimo to uz sed -r mora escape \/
+
+10.for i in $(cat fajl.txt) -> vraca sve sto se nalazi u fajl.txt, upisuje u i tako da je i cela linija
+
+	10.1. namestanjem promenljive IFS='' obezbedjujemo da elementi budu reci a ne linije
+
+11. -A alocira niz kao hes mapu
